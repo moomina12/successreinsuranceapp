@@ -7,7 +7,7 @@ from reportlab.pdfgen import canvas
 from tempfile import NamedTemporaryFile
 
 # Set Streamlit page configuration
-st.set_page_config(page_title="Reinsurance Loss Dashboard", layout="wide")
+st.set_page_config(page_title="Reinsurance Dashboard", layout="wide")
 
 REQUIRED_COLUMNS = [
     "Region", "Loss Amount", "Policy Type",
@@ -19,7 +19,7 @@ if "file_uploaded" not in st.session_state:
     st.session_state.file_uploaded = False
 
 if not st.session_state.file_uploaded:
-    st.title("📊 Reinsurance Loss Portfolio Dashboard")
+    st.title("📊 Reinsurance Portfolio Dashboard")
     st.image("welcome.gif", use_container_width=True)
 
     with st.sidebar.expander("📋 Upload Instructions", expanded=True):
